@@ -15,6 +15,8 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script src="menu.js" defer></script>
 
     <title>VIALEX WEB STUDIO</title>
 </head>
@@ -34,13 +36,13 @@
                         <a href="#">Início</a>
                     </li>
                     <li>
-                        <a href="#">Especialidades</a>
+                        <a href="#especialidades">Especialidades</a>
                     </li>
                     <li>
-                        <a href="#">Sobre</a>
+                        <a href="#sobre">Sobre</a>
                     </li>
                     <li>
-                        <a href="#">Projetos</a>
+                        <a href="#projetos">Projetos</a>
                     </li>
                 </ul>
             </nav>
@@ -50,7 +52,28 @@
                     <button>Contato</button>
                 </a>
             </div>
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
 
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+
+            <div class="overlay-menu"id="overlay-menu" ></div>
         </div> <!--Interface-->
 
     </header>
@@ -80,7 +103,7 @@
             </div><!--INTERFACE-->
         </section><!--TOPO_DO-SITE-->
 
-        <section class="especialidades">
+        <section class="especialidades" id="especialidades">
             <div class="interface">
                 <h2 class="titulo">Minhas <span>Especialidades.</span></h2>
                 <div class="flex">
@@ -118,7 +141,7 @@
             </div>
         </section>
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
@@ -150,7 +173,7 @@
             </div>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="projetos">
 
             <div class="interface">
                 <h2 class="titulo">Meu <span>portfolio.</span></h2>
